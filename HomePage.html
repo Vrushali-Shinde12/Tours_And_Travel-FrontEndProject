@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="UTF-8">
+        <title>Home Page</title>
+        <link rel="stylesheet" type="text/css" href="homePageExCss.css">
+    </head>
+    <body>
+        <section class="show">
+            <header>
+                <h2 class="logo"> Travel </h2>
+                <div class="toggle"></div>
+            </header>
+            <video src="explore.mp4" muted loop autoplay></video>
+            <div class="overlay"></div>
+            <div class="text">
+                <h2>Never Stop</h2>
+                <h3>Exploring The World</h3>
+                <p>"Travel is fatal to prejudice, bigotry and narrow-mindedness." - Mark Twain<br><br>
+                    Travelling the world exposes you to different people, cultures, and perspectives.
+                    We believe that cultural exchange has the power to change the world by removing the hard divides between people of all backgrounds. 
+                    Simply put, the best reason to travel is to make the world a better place.</p>
+                    <a href="Explore.html">Explore</a>
+            </div>
+            
+        </section>
+
+
+        <div class="menu">
+            <ul>
+                <li><a href="AboutPage.html">About</a></li>
+                <li><a href="Gallery.html">Gallery</a></li>
+                <li><a href="Blogs.html">Blogs</a></li>
+                <li><a href="Book.html">Book</a></li>
+                <li><a href="ContactUs.html">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <script>
+            const menuToggle = document.querySelector('.toggle')
+            const show = document.querySelector('.show')
+
+            menuToggle.addEventListener('click', function(){
+                menuToggle.classList.toggle('active')
+                show.classList.toggle('active')
+            })
+        </script>
+    </body>
+</html>
+
